@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioJS</title>
+    <link rel="stylesheet" href="./estilos/equipo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+    <link rel="stylesheet" href="presupuesto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!-- <script src="clase3/main.js"></script> -->
+</head>
+<body class="w3-black">
+    <!-- <script src="clase3/metodo.js"></script> -->
+    <header >
+        <div class="  w3-small w3-hide-small w3-center">
+
+            <img src="/img/godoy_logo.png" style="width:30%">
+        </div>
+        <div>
+            
+            <div >
+                    
+                
+                <div class="w3-container w3-padding-32 w3-center w3-black" id="home">
+                    
+                    <h2>¡¡Calcula el presupuesto de tu ventana!!</h2>
+                </div>
+                
+                <!-- Formulario -->
+                
+                <form id="form">
+                    <fieldset class="container" >
+                        <div >
+                            
+                            <legend>Informacion Personal</legend>
+                        </div>
+                        
+                        
+                        <br>
+                        <div class="row mt-5">
+                            
+                            <!-- nombre -->
+                            <div class="form-group col-md-6">
+                                
+                                <label for="nombre" ><h4>Nombre</h4></label>
+                                
+                                <input class="form-control" required placeholder="Nombre"  name="nombre" type="text" id="input-Nombre">
+                            </div>
+                            <br>
+                            <!-- apellido -->
+                            <div class="form-group col-md-6">
+                                
+                                <label for="nombre" ><h4>Apellido</h4></label>
+                                
+                                <input class="form-control" required placeholder="Apellido"  name="apellido" type="text" id="input-Apellido" >
+                            </div>
+                            
+                        <!-- </div>
+                        <div class="row mt-5"> -->
+                            
+                            <!-- direccion -->
+                            <div class="form-group col-md-8">
+                                
+                                <label for="direccion" ><h4>Dirección</h4></label>
+                                
+                                <input class="form-control" required placeholder="Dirección"  name="direccion" type="textarea" id="input-Direccion">
+                            </div>
+                            <br>
+                            <!-- telefono -->
+                            <div class="form-group col-md-4">
+                                
+                                <label for="telefono" ><h4>Telefono</h4></label>
+                                
+                                <input class="form-control" required placeholder="Telefono"  name="telefono" type="textarea" id="input-Telefono">
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <h3 class="w3-padding-24 w3-text-light-grey">¿Cuánto mide tu ventana?</h3>
+                        <div class=" row mt-5">
+                            <div class="form-group col-md-6">
+                                
+                                <label for="Ancho" ><h4>Ancho(Centimetros)</h4></label>
+                                
+                                <input class="form-control" type="text" id="input-ancho" >
+                            </div>
+                            <br>
+                            <!-- apellido -->
+                            <div class="form-group col-md-6">
+                                
+                                <label for="Alto" ><h4>Alto(Centimetros)</h4></label>
+                                
+                                <input class="form-control" type="text" id="input-alto">
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <!-- boton enviar -->
+                        <div >
+                            <div>
+                                
+                                
+                                <button class="row-md-4 btn btn-success m-3" type="submit"  value="Enviar" id="btn">Enviar </button>
+                                
+                                
+                                <input class="row-md-4 btn btn-success m-3" type="reset" value="reset">
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                    <br>
+                    <hr>
+                    
+                    
+                </form>
+            </div>
+        </div>
+        <h3><a href="index.html"class="inline">Volver</a></h3>
+    </header>
+    
+    
+    <script src="/events.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+    
+</body>
+</html>
