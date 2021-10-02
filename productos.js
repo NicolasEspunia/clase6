@@ -41,8 +41,8 @@ function comprarPlatillo(e){
 function leerDatosPlatillo(platillo){
     const infoPlatillo ={
         imagen:platillo.querySelector('img').src,
-        titulo:platillo.querySelector('h4').text,
-        precio:platillo.querySelector('.precio').text,
+        titulo:platillo.querySelector('h4').Text,
+        precio:platillo.querySelector('.precio').Text,
         id:platillo.querySelector('a').getAttribute('data-id')
 
     }
